@@ -1,0 +1,21 @@
+<html lang=""en>
+<body>
+    <p>these events are useful for</p>
+    <div> id="target" class="box">move in and out.<br>
+    <strong>this is child element.</strong>
+</div>
+<p id="result" class="result">waiting...</p>
+<script>
+const target= document.querySelector("#target");
+const result= document.querySelector("#result");
+target.addEventListener("mouseenter", () => {
+    target.style.backgroundColor= "#bbf7d0";
+    result.textContent= "mouseeneter: pointer entered the box";
+});
+target.addEventListener("mouseleave", () => {
+    target.style.backgroundColor= "#dbeafe";
+    result.textContent= "mouseleave: pointer left the box";
+});
+</script>
+</body>
+</html>

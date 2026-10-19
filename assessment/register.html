@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events - Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🎓 Campus <span>Events</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html" class="active">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="page-top">
+      <h1>Event Registration</h1>
+      <p class="subtitle">Fill out the form to register for an event.</p>
+    </div>
+
+    <form id="registerForm" class="form-box">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="yourname@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="department">Department *</label>
+          <select id="department" required>
+            <option value="">Select department</option>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>Business Administration</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="year">Year of Study *</label>
+          <select id="year" required>
+            <option value="">Select year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="eventName">Choose an Event *</label>
+          <select id="eventName" required>
+            <option value="">Select an event</option>
+            <option>Tech Fest 2026</option>
+            <option>Cultural Day</option>
+            <option>Inter-College Sports Meet</option>
+            <option>AI Workshop</option>
+            <option>Photography Contest</option>
+            <option>Career Guidance Talk</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Preferred Date *</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" rows="3" placeholder="Any additional information..."></textarea>
+      </div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to the event rules and regulations.</label>
+      </div>
+
+      <div class="button-row">
+        <button type="submit" class="btn btn-submit">Register</button>
+        <button type="reset" class="btn btn-reset">Reset</button>
+      </div>
+
+      <p id="formMessage" class="form-message"></p>
+
+      <p class="note">Note: This is a front-end project. The form works in your browser only. Your details are not saved or sent anywhere unless a backend is added.</p>
+
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>🎓 Campus Events</h4>
+        <p>Bringing students together through learning, creativity and collaboration.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social"><span>f</span><span>◎</span><span>in</span><span>▶</span></div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Campus Events. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
